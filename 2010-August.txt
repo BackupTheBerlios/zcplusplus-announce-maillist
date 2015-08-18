@@ -1,0 +1,36 @@
+From zaimoni at zaimoni.com  Sun Aug  1 21:47:19 2010
+From: zaimoni at zaimoni.com (Kenneth Boyd)
+Date: Sun, 01 Aug 2010 14:47:19 -0500
+Subject: [Zcplusplus-announce] Z.C++ 0.0.4 release
+In-Reply-To: <4BD656EF.7040309@zaimoni.com>
+References: <4AAB3CD5.6070907@zaimoni.com> <4B3C6616.6020206@zaimoni.com>
+	<4BD656EF.7040309@zaimoni.com>
+Message-ID: <4C55CF47.7080009@zaimoni.com>
+
+To All Whom It May Concern,
+
+Z.C++ 0.0.5 has been released.
+* Download at: 
+https://developer.berlios.de/project/showfiles.php?group_id=10611
+
+Z.C++ is now in stage 1 (new features).
+
+New features in zcc
+* extension: evaluation of typeid(...)==typeid(...) at compile-time when 
+the types are known at compile time
+
+Bugfixes in zcc
+* sizeof("A") now works
+* the any-order requirement for fundamental types whose type specifier 
+requires more than one keyword is now implemented.
+
+All C99/C++0X compliance errors in z_cpp, not documented as intentional,
+will be considered for blocking transition from stage 1 to stage 2
+(effectively blocking release of Z.C++ 0.0.6).  Please report such bugs
+immediately to zcplusplus-dev at lists.berlios.de .  Reduced test cases
+would be appreciated.
+
+Best Regards,
+Kenneth Boyd
+
+

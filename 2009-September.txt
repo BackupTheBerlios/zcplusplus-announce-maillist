@@ -1,0 +1,43 @@
+From zaimoni at zaimoni.com  Sat Sep 12 08:16:53 2009
+From: zaimoni at zaimoni.com (Kenneth Boyd)
+Date: Sat, 12 Sep 2009 01:16:53 -0500
+Subject: [Zcplusplus-announce] Z.C++ 0.0.2 release
+Message-ID: <4AAB3CD5.6070907@zaimoni.com>
+
+To All Whom It May Concern,
+
+Z.C++ 0.0.2 has been released.
+* Download at: 
+https://developer.berlios.de/project/showfiles.php?group_id=10611
+* z_cpp should now be C99/C++0X compliant when the --pedantic option is 
+used, aside from missing standard headers.
+** __LINE__ directive now works (this bug slipped through Z.C++ 0.0.1 
+through missing test case)
+** LLONG_MIN no longer causes massive errors in evaluating #if/#elif 
+control expressions.
+** The only additional non-compliant behavior when the --pedantic option 
+is omitted, should be the positive Golden Rule violation of erroring out 
+on macro definitions that either automatically cause token concatenation 
+errors when instantiated, or require an empty parameter to avoid an 
+automatic token concatenation error.
+
+Z.C++ is now in stage 1 (new features).
+
+All C99/C++0X compliance errors in z_cpp, not mentioned above, will be 
+considered for blocking transition from stage 1 to stage 2 (effectively 
+blocking release of Z.C++ 0.0.3).  Please report such bugs immediately 
+to zcplusplus-dev at lists.berlios.de .  Reduced test cases would be 
+appreciated.
+
+You may notice that zcc and cmp are included in the binary releases.  
+They are included for completeness, not general usability.
+* zcc currently is a vastly incomplete C99/C++0x syntax checker.
+* cmp is a bare-bones partial reimplementation of POSIX 2/3 cmp.  It was 
+included before it became obvious that the changes needed to allow 
+building with MSVC 9.0 (Visual Studio 2008) were stage 1 changes.
+
+Best Regards,
+Kenneth Boyd
+
+
+

@@ -1,0 +1,38 @@
+From zaimoni at zaimoni.com  Thu Dec 31 09:51:34 2009
+From: zaimoni at zaimoni.com (Kenneth Boyd)
+Date: Thu, 31 Dec 2009 02:51:34 -0600
+Subject: [Zcplusplus-announce] Z.C++ 0.0.3 release
+In-Reply-To: <4AAB3CD5.6070907@zaimoni.com>
+References: <4AAB3CD5.6070907@zaimoni.com>
+Message-ID: <4B3C6616.6020206@zaimoni.com>
+
+To All Whom It May Concern,
+
+Z.C++ 0.0.3 has been released.
+* Download at: 
+https://developer.berlios.de/project/showfiles.php?group_id=10611
+
+Z.C++ is now in stage 1 (new features)
+
+New features
+* extension macros:
+** __COUNTER__ : GCC/CLang/MSVC
+** __INCLUDE_LEVEL__ : GCC/CLang
+** __TIMESTAMP__ : GCC/CLang/MSVC
+** __has_include : CLang
+* zcc changes
+** new output mode: source transform
+** static assertions (C1X: _Static_Assert(), C++0X static_assert)
+** recognize but not yet parsing definitions of: enum, union, struct, class
+
+All C99/C++0X compliance errors in z_cpp, not documented as intentional, 
+will be considered for blocking transition from stage 1 to stage 2 
+(effectively blocking release of Z.C++ 0.0.3).  Please report such bugs 
+immediately to zcplusplus-dev at lists.berlios.de .  Reduced test cases 
+would be appreciated.
+
+Best Regards,
+Kenneth Boyd
+
+
+

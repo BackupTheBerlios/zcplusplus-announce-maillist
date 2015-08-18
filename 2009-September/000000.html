@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Zcplusplus-announce] Z.C++ 0.0.2 release
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/zcplusplus-announce/2009-September/index.html" >
+   <LINK REL="made" HREF="mailto:zcplusplus-announce%40lists.berlios.de?Subject=Re%3A%20%5BZcplusplus-announce%5D%20Z.C%2B%2B%200.0.2%20release&In-Reply-To=%3C4AAB3CD5.6070907%40zaimoni.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Zcplusplus-announce] Z.C++ 0.0.2 release</H1>
+    <B>Kenneth Boyd</B> 
+    <A HREF="mailto:zcplusplus-announce%40lists.berlios.de?Subject=Re%3A%20%5BZcplusplus-announce%5D%20Z.C%2B%2B%200.0.2%20release&In-Reply-To=%3C4AAB3CD5.6070907%40zaimoni.com%3E"
+       TITLE="[Zcplusplus-announce] Z.C++ 0.0.2 release">zaimoni at zaimoni.com
+       </A><BR>
+    <I>Sat Sep 12 08:16:53 CEST 2009</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>To All Whom It May Concern,
+
+Z.C++ 0.0.2 has been released.
+* Download at: 
+<A HREF="https://developer.berlios.de/project/showfiles.php?group_id=10611">https://developer.berlios.de/project/showfiles.php?group_id=10611</A>
+* z_cpp should now be C99/C++0X compliant when the --pedantic option is 
+used, aside from missing standard headers.
+** __LINE__ directive now works (this bug slipped through Z.C++ 0.0.1 
+through missing test case)
+** LLONG_MIN no longer causes massive errors in evaluating #if/#elif 
+control expressions.
+** The only additional non-compliant behavior when the --pedantic option 
+is omitted, should be the positive Golden Rule violation of erroring out 
+on macro definitions that either automatically cause token concatenation 
+errors when instantiated, or require an empty parameter to avoid an 
+automatic token concatenation error.
+
+Z.C++ is now in stage 1 (new features).
+
+All C99/C++0X compliance errors in z_cpp, not mentioned above, will be 
+considered for blocking transition from stage 1 to stage 2 (effectively 
+blocking release of Z.C++ 0.0.3).  Please report such bugs immediately 
+to <A HREF="https://lists.berlios.de/mailman/listinfo/zcplusplus-announce">zcplusplus-dev at lists.berlios.de</A> .  Reduced test cases would be 
+appreciated.
+
+You may notice that zcc and cmp are included in the binary releases.  
+They are included for completeness, not general usability.
+* zcc currently is a vastly incomplete C99/C++0x syntax checker.
+* cmp is a bare-bones partial reimplementation of POSIX 2/3 cmp.  It was 
+included before it became obvious that the changes needed to allow 
+building with MSVC 9.0 (Visual Studio 2008) were stage 1 changes.
+
+Best Regards,
+Kenneth Boyd
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/zcplusplus-announce">More information about the Zcplusplus-announce
+mailing list</a><br>
+</body></html>

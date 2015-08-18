@@ -1,0 +1,34 @@
+From zaimoni at zaimoni.com  Sat Jan 29 23:58:19 2011
+From: zaimoni at zaimoni.com (Kenneth Boyd)
+Date: Sat, 29 Jan 2011 16:58:19 -0600
+Subject: [Zcplusplus-announce]   Z.C++ 0.0.7 release
+In-Reply-To: <4CCF05F2.7080706@zaimoni.com>
+References: <4AAB3CD5.6070907@zaimoni.com>	<4B3C6616.6020206@zaimoni.com>	<4BD656EF.7040309@zaimoni.com>	<4C55CF47.7080009@zaimoni.com>
+	<4CCF05F2.7080706@zaimoni.com>
+Message-ID: <4D449B8B.6050706@zaimoni.com>
+
+To All Whom It May Concern,
+
+Z.C++ 0.0.7 has been released.
+* Download at: 
+https://developer.berlios.de/project/showfiles.php?group_id=10611
+
+Z.C++ is now in stage 1 (new features).
+
+New features in Z.C++
+* Command-line option -ferror-limit, for  CLang compatibility
+
+Bugfixes in Z.C++
+* actually handle namespaced non-template stuct/union/class/enum 
+declarations
+
+All C99/C++0X compliance errors in z_cpp, not documented as intentional,
+will be considered for blocking transition from stage 1 to stage 2
+(effectively blocking release of Z.C++ 0.0.8).  Please report such bugs
+immediately to zcplusplus-dev at lists.berlios.de .  Reduced test cases
+would be appreciated.
+
+Best Regards,
+Kenneth Boyd
+
+

@@ -1,0 +1,32 @@
+From zaimoni at zaimoni.com  Tue Apr 27 05:15:59 2010
+From: zaimoni at zaimoni.com (Kenneth Boyd)
+Date: Mon, 26 Apr 2010 22:15:59 -0500
+Subject: [Zcplusplus-announce] Z.C++ 0.0.4 release
+In-Reply-To: <4B3C6616.6020206@zaimoni.com>
+References: <4AAB3CD5.6070907@zaimoni.com> <4B3C6616.6020206@zaimoni.com>
+Message-ID: <4BD656EF.7040309@zaimoni.com>
+
+To All Whom It May Concern,
+
+Z.C++ 0.0.4 has been released.
+* Download at: 
+https://developer.berlios.de/project/showfiles.php?group_id=10611 .
+
+Z.C++ is now in stage 1 (new features).
+
+New features:
+* full parsing of enumerators, and their use in expressions.
+* very limited sizeof operator: expressions and non-cv-qualified 
+fundamental types work. Pointers, structs, etc. don't work.
+
+All C99/C++0X compliance errors in z_cpp, not documented as intentional,
+will be considered for blocking transition from stage 1 to stage 2
+(effectively blocking release of Z.C++ 0.0.5).  Please report such bugs
+immediately to zcplusplus-dev at lists.berlios.de .  Reduced test cases
+would be appreciated.
+
+Best Regards,
+Kenneth Boyd
+
+
+

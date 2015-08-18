@@ -1,0 +1,43 @@
+From zaimoni at zaimoni.com  Sat Oct  1 03:37:52 2011
+From: zaimoni at zaimoni.com (Kenneth Boyd)
+Date: Fri, 30 Sep 2011 20:37:52 -0500
+Subject: [Zcplusplus-announce] Z.C++ 0.0.9 release
+In-Reply-To: <4DBDD1F8.500@zaimoni.com>
+References: <4AAB3CD5.6070907@zaimoni.com>	<4B3C6616.6020206@zaimoni.com>	<4BD656EF.7040309@zaimoni.com>	<4C55CF47.7080009@zaimoni.com>
+	<4CCF05F2.7080706@zaimoni.com> <4D449B8B.6050706@zaimoni.com>
+	<4DBDD1F8.500@zaimoni.com>
+Message-ID: <4E866EF0.8080008@zaimoni.com>
+
+To All Whom It May Concern,
+
+Z.C++ 0.0.9 has been released.
+* Download at: 
+https://developer.berlios.de/project/showfiles.php?group_id=10611
+
+Z.C++ is now in stage 1 (new features)
+
+New features in Z.C++
+* compiler extension __zcc_linkage, for evaluation of identifier linkage 
+at compile time.  Needed to make linkage testable.  Evaluates as
+** -2: bug prevented evaluation
+** -1: identifier not defined at all
+** 0: identifier has no linkage
+** 1: identifier has internal linkage (e.g., declared static)
+** 2: identifier has native external linkage (C for C, C++ for C++)
+** 3: identifier has non-native external C linkage (not implemented yet)
+
+Bugfixes
+* #if 9<=10000*__ZCC__+100*__ZCC_MINOR__+__ZCC_PATCHLEVEL__ works as 
+expected
+* C keyword changes: _Static_assert rather than _Static_Assert, 
+_Thread_local rather than _Thread_local
+
+All C99/C++0X compliance errors in z_cpp, not documented as intentional, 
+will be considered for blocking transition from stage 1 to stage 2 
+(effectively blocking release of Z.C++ 0.0.10).  Please report such bugs 
+immediately to zcplusplus-dev at lists.berlios.de .  Reduced test cases 
+would be appreciated.
+
+Kenneth
+
+
